@@ -1,8 +1,9 @@
 import LogoS from '../../assets/images/letterN.png'
 import { Link } from 'react-router-dom';
 import './index.scss'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from './Logo'
 
 
 const Home = () => {
@@ -12,6 +13,13 @@ const Home = () => {
   const hiArray=['H','e','l','l','o',' ','W','o','r','l','d'];
   const imArray=['I','\'','m'];
 // thes are the letters that will be animated
+
+
+useEffect(()=>{
+  return setTimeout(()=>{
+    setLetterClass('text-animate-hover')
+  },4000)
+},[])
   return (
     <div className="container home-page">
      <div className="text-zone">
@@ -42,6 +50,7 @@ const Home = () => {
          <h2>Interested in learning full stack technologies</h2>
          <Link to='/contact' className='flat-button'>CONTACT ME</Link>
      </div>
+     <Logo/>
     </div>
   );
 }

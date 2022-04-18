@@ -1,0 +1,52 @@
+.logo-container {
+    z-index: 0;
+    width: 400px;
+    height: 609px;
+    // opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+  
+    svg {
+      width: 100%;
+      height: auto;
+      bottom: 0;
+      transform: rotateX(180deg);
+      animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+    //   transform: rotateZ(30deg) !important;
+    }
+  
+    .solid-logo {
+      position: absolute;
+      top: auto;
+      right: 50%;
+      bottom: auto;
+      left: 0;
+      margin: auto;
+      width: 100%;
+      opacity: 0;
+      transform: rotateX(180deg);
+
+    //   transform: rotateZ(30deg) !important;
+      z-index: 1;
+    }
+  }
+  
+  .svg-container {
+    stroke: #ffd700;
+    stroke-width: 10;
+  }
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
