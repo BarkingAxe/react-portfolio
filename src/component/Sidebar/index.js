@@ -16,32 +16,20 @@ const Sidebar = () => (
     <img className = 'sub-logo'src= {LogoSubtitle} alt ="NICK"/>
 </Link>
 <nav>
-<NavLink 
-    exact = 'true' 
-    activeclassname = 'active' 
-    to="/">
-
-    <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
-</NavLink>
-
-<NavLink 
-    exact = 'true' 
-    activeclassname = 'active'
-    className = "about-link"
-    to="/about">
-    
-    <FontAwesomeIcon icon={faUser} color="#4d4d4e"/>
-</NavLink>
-
-<NavLink 
-    exact = 'true' 
-    activeclassname = 'active'
-    className = "contact-link" 
-    to="/contact">
-
-    <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
-</NavLink>
-</nav>
+        <NavLink exact="true" activeclassname="active" to="/">
+          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        </NavLink>
+        <NavLink activeclassname="active" className="about-link" to="/about">
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          activeclassname="active"
+          className="contact-link"
+          to="/contact"
+        >
+          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        </NavLink>
+      </nav>
 
 <ul>
     <li>
